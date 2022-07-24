@@ -31,5 +31,6 @@ No resources.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_global_tags"></a> [global\_tags](#output\_global\_tags) | n/a |
+| <a name="output_azs"></a> [azs](#output\_azs) | n/a |
+| <a name="output_vpc_id"></a> [vpc\_id](#output\_vpc\_id) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

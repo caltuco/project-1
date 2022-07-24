@@ -1,4 +1,10 @@
-output "global_tags" {
-    value = var.global_tags
+output "vpc_id" {
+    value = module.vpc.vpc_id
+  
+}
+
+output "azs" {
+
+    value = module.vpc.azs
   
 }

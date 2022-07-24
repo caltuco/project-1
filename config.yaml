@@ -2,5 +2,5 @@
 global_tags:
   Terraform: "true"
   Environment: ""
-Company: "my-company"
-Project: "project-1"
+company: "my-company"
+project: "project-1"
