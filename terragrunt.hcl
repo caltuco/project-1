@@ -65,7 +65,7 @@ generate "version" {
   terraform {
     required_version = ">= 0.14"
     required_providers {
-      azurerm = {
+      aws = {
         source  = "hashicorp/aws"
         version = ">= 4.22.0"
         }
