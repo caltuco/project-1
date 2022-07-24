@@ -1,0 +1,4 @@
+---
+global_tags : 
+  Terraform   : "true"
+  Environment : "dev"

@@ -1,0 +1,6 @@
+---
+global_tags:
+  Terraform: "true"
+  Environment: ""
+Company: "my-company"
+Project: "project-1"
