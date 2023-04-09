@@ -15,6 +15,8 @@ inputs = {
     cluster_name = "testapp"
     vpc_id = dependency.vpc.outputs.vpc_id
     vpc_azs = dependency.vpc.outputs.azs
+    public_subnets_ids = dependency.vpc.outputs.public_ids
+    private_subnets_ids = dependency.vpc.outputs.private_ids
 
 
 }

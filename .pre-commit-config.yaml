@@ -1,1 +1,29 @@
-/home/luis/Documents/proyectos_personal/git_repos/bitbucket/terraform_training/pre-commit-config.yaml
+repos:
+- repo: https://github.com/gruntwork-io/pre-commit
+  rev: v0.1.17 # Get the latest from: https://github.com/gruntwork-io/pre-commit/releases
+  hooks:
+    # - id: tflint
+    #   files: \.tf$
+    #   args:
+    #     - "--module"
+    #     - "--deep"
+    #     - "--config=.tflint.hcl"
+    - id: terragrunt-hclfmt
+    - id: terraform-validate
+    - id: terraform-fmt
+# - repo : https://github.com/terraform-docs/terraform-docs
+#   rev: v0.16.0
+#   hooks:
+#     - id: terraform-docs-go
+#       # args: args: ["markdown", "table", "--output-file", "README.md", "./mymodule/path"]
+- repo: git://github.com/antonbabenko/pre-commit-terraform
+  rev: v1.62.3 # Get the latest from: https://github.com/antonbabenko/pre-commit-terraform/releases
+  hooks:
+#    - id: terraform_tfsec
+    - id: terraform_docs
+      args:
+        - markdown .
+        - --hook-config=--path-to-file=README.md        # Valid UNIX path. I.e. ../TFDOC.md or docs/README.md etc.
+        - --hook-config=--add-to-existing-file=true     # Boolean. true or false
+        - --hook-config=--create-file-if-not-exist=true # Boolean. true or false
+    - id: checkov

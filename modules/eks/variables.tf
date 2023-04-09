@@ -29,3 +29,11 @@ variable "vpc_azs" {
   type = list
     
 }
+
+variable "private_subnets_ids" {
+  type = list(string)
+}
+
+variable "public_subnets_ids" {
+  type = list(string)
+}
